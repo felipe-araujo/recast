@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import FixedMenu from './FixedMenu';
 import SideMenu from './SideMenu';
 import Podcasts from './podcasts/Podcasts';
-
+import Player from './Player';
 
 export default () => {
   return (
@@ -12,6 +12,7 @@ export default () => {
       <main className="mdl-layout__content">
         <Podcasts/>
       </main>
+      <Player/>
     </div>
   );
 }

@@ -6,12 +6,13 @@ import MainContainer from './components/MainContainer';
 
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import { Provider } from 'react-redux';
-import PodcastReducer from './reducers/podcasts'
+import PodcastReducer from './reducers/podcasts';
+import PlaylistReducer from './reducers/playlist';
 
 class App extends Component {
   render() {
 
-    const reducers = combineReducers({ podcasts: PodcastReducer});
+    const reducers = combineReducers({ podcasts: PodcastReducer, playlist: PlaylistReducer});
     const store = createStore(reducers);
 
     return (
